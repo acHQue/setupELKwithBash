@@ -30,7 +30,7 @@ sudo systemctl start nginx
 #sudo systemctl status kibana
 #sudo systemctl status nginx
 
-ehco "---------------------------------------------------------------------"
+echo "---------------------------------------------------------------------"
 
 echo "Elasticsearch is"
 sudo systemctl is-enabled elasticsearch

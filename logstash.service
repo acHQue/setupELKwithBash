@@ -1,0 +1,12 @@
+[Unit]
+Description=logstash
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/home/administrator/elk/logstash-8.7.1/bin/logstash -f /home/administrator/elk/splunk-pipeline.yml
+User=root
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,12 @@
+[Unit]
+Description=elasticsearch
+After=network-online.target
+
+[Service]
+Type=simple
+Restart=always
+ExecStart=/home/administrator/elk/elasticsearch-8.7.1/bin/elasticsearch
+User=administrator
+
+[Install]
+WantedBy=multi-user.target

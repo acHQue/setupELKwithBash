@@ -1,8 +1,13 @@
-sudo cp ~/git/ELK_SIEM_HIDS_ConfigurationFiles/elasticsearch.service /lib/systemd/system
-sudo cp ~/git/ELK_SIEM_HIDS_ConfigurationFiles/kibana.service /lib/systemd/system
-sudo cp ~/git/ELK_SIEM_HIDS_ConfigurationFiles/logstash.service /lib/systemd/system
-sudo cp ~/git/ELK_SIEM_HIDS_ConfigurationFiles/nginx.service /lib/systemd/system
+#sudo cp ~/git/ELK_SIEM_HIDS_ConfigurationFiles/elasticsearch.service /lib/systemd/system
+#sudo cp ~/git/ELK_SIEM_HIDS_ConfigurationFiles/kibana.service /lib/systemd/system
+#sudo cp ~/git/ELK_SIEM_HIDS_ConfigurationFiles/logstash.service /lib/systemd/system
+#sudo cp ~/git/ELK_SIEM_HIDS_ConfigurationFiles/nginx.service /lib/systemd/system
 echo "systemctl .service files added..."
+
+sudo cp ~/setupELKwithBash/elasticsearch.service /lib/systemd/system/
+sudo cp ~/setupELKwithBash/kibana.service /lib/systemd/system/
+sudo cp ~/setupELKwithBash/logstash.service /lib/systemd/system/
+sudo cp ~/setupELKwithBash/nginx.service /lib/systemd/system/
 
 #Elastic
 sudo systemctl enable elasticsearch

@@ -1,1 +1,2 @@
-
+sudo rm -r ~/elk
+sudo apt-get remove nginix -y
